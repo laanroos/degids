@@ -75,7 +75,7 @@
 	top:10px;
 }
 
-.menu-plaatje-internetgids {
+.ui-btn-up-c .menu-plaatje-internetgids {
 	width:40px;
 	position:absolute;
 	left:30px;
@@ -159,6 +159,7 @@
 	padding-left:90px !important;
 }
 
+
 .ui-btn-up-a, .ui-btn-up-b, .ui-btn-up-c {
 	text-align:left;
 	line-height:30%;
@@ -166,6 +167,28 @@
 	padding-bottom:4px !important;
 	border-bottom:1px solid white;
 	border-top:1px solid white;
+}
+
+.ui-btn-hover-c, ui-btn-hover-c p {
+	text-align:left;
+	line-height:30%;
+	border-bottom:1px solid white;
+	border-top:1px solid white;
+	padding-left:90px !important;
+	padding-top:8px !important;
+	padding-bottom:8px !important;
+	background:yellow;
+}
+
+.ui-btn-down-c, ui-btn-down-c p {
+	text-align:left;
+	line-height:30%;
+	border-bottom:1px solid white;
+	border-top:1px solid white;
+	padding-left:90px !important;
+	padding-top:8px !important;
+	padding-bottom:8px !important;
+	background:green;
 }
 
 .ui-btn-up-b {
@@ -188,19 +211,35 @@
 	padding-bottom:8px !important;
 }
 
-.ui-btn-up-c a:link {
-	padding-top:8px !important;
-	padding-bottom:8px !important;
-	text-decoration:none;
-	background:red !important;
-}
-
 .ui-btn-up-c p:nth-child(3) {
 	color:red;
 	position:absolute;
 	font-weight:700;
 	right:20px;
 	top:8px;
+	display:none;
+}
+
+.ui-btn-hover-c p:nth-child(3){
+	color:red;
+	position:absolute;
+	font-weight:700;
+	right:20px;
+	top:8px;
+}
+
+.ui-btn-hover-c .menu-plaatje-internetgids {
+	display:none;
+}
+
+.ui-btn-hover-c p:nth-child(2), .ui-btn-down-c p:nth-child(2),  {
+	color:red;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .ui-btn-up-d {

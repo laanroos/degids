@@ -30,6 +30,14 @@
 	top:50px;
 }
 
+.menu-bakens {
+	display:inline-block;
+	position:relative;
+	top:-70px;
+	width:86%;
+	border-top:1px solid black;
+}
+
 .menu, menu-internetgids {
 	text-align:center;
 	width:100%;
@@ -67,7 +75,7 @@
 	top:10px;
 }
 
-.menu-plaatje-internetgids {
+.ui-btn-up-c .menu-plaatje-internetgids {
 	width:40px;
 	position:absolute;
 	left:30px;
@@ -151,6 +159,7 @@
 	padding-left:90px !important;
 }
 
+
 .ui-btn-up-a, .ui-btn-up-b, .ui-btn-up-c {
 	text-align:left;
 	line-height:30%;
@@ -158,6 +167,28 @@
 	padding-bottom:4px !important;
 	border-bottom:1px solid white;
 	border-top:1px solid white;
+}
+
+.ui-btn-hover-c, ui-btn-hover-c p {
+	text-align:left;
+	line-height:30%;
+	border-bottom:1px solid white;
+	border-top:1px solid white;
+	padding-left:90px !important;
+	padding-top:8px !important;
+	padding-bottom:8px !important;
+	background:yellow;
+}
+
+.ui-btn-down-c, ui-btn-down-c p {
+	text-align:left;
+	line-height:30%;
+	border-bottom:1px solid white;
+	border-top:1px solid white;
+	padding-left:90px !important;
+	padding-top:8px !important;
+	padding-bottom:8px !important;
+	background:green;
 }
 
 .ui-btn-up-b {
@@ -180,19 +211,49 @@
 	padding-bottom:8px !important;
 }
 
-.ui-btn-up-c a:link {
-	padding-top:8px !important;
-	padding-bottom:8px !important;
-	text-decoration:none;
-	background:red !important;
-}
-
 .ui-btn-up-c p:nth-child(3) {
 	color:red;
 	position:absolute;
 	font-weight:700;
 	right:20px;
 	top:8px;
+	display:none;
+}
+
+.ui-btn-hover-c p:nth-child(3){
+	color:red;
+	position:absolute;
+	font-weight:700;
+	right:20px;
+	top:8px;
+}
+
+.ui-btn-hover-c .menu-plaatje-internetgids {
+	display:none;
+}
+
+.ui-btn-hover-c p:nth-child(2), .ui-btn-down-c p:nth-child(2),  {
+	color:red;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ui-btn-up-d {
+	color:gray;
+	border-bottom:1px solid gray;
+	line-height:10%;
+	font-size:12px;
+}
+
+.ui-bar-f {
+    color:black;
+    line-height:10%;
+    font-size:12px;
+    border-bottom:1px solid black;
 }
 
 .bakens {
@@ -202,14 +263,73 @@
      width:90%;
      margin:0 auto;
  }
-.bakens p:nth-child(1) {
+ 
+.bakens p.jaargang {
     position: relative;
     display: inline-block;
     font-size:10px;
     font-family:Georgia;
-    left:20px;
 }
-.bakens p:nth-child(1):before, .bakens p:nth-child(1):after {
+
+.bakens .logo-bakens {
+	position: relative;
+    display: inline-block;
+    width:150px;
+}
+
+.bakens .logo-bakens-rood {
+	position: relative;
+    display: inline-block;
+    width:35px;
+    top:-40px;
+}
+
+.bakens p.nummer {
+    position: relative;
+    display: inline-block;
+    font-size:10px;
+    font-family:Georgia;
+    top:-20px;
+    font-weight:800;
+}
+
+.bakens p.titel {
+    position: relative;
+    display: inline-block;
+    font-size:22px;
+    top:-35px;
+    font-family:Georgia;
+}
+
+.bakens p.subtitel {
+    position: relative;
+    display: inline-block;
+    font-size:15px;
+    font-style:italic;
+    font-weight:800;
+    top:-50px;
+    font-family:Georgia;
+}
+
+.bakens p.inhoud-tekst {
+    position: relative;
+    display: inline-block;
+    font-size:12px;
+    top:-70px;
+    font-family:Georgia;
+    text-align:left;
+    padding:20px;
+}
+
+.bakens p.inhoud-tekst:first-letter {
+    color:black;
+    font-size:50px;
+    padding-right:10px;
+    padding-bottom:0px;
+    float:left;
+}
+
+.bakens p.jaargang:before, .bakens p.jaargang:after {
     content: '';
     position: absolute;
     top: 50%;
@@ -217,9 +337,9 @@
     width: 120%;
     margin: 0 10px;
 }
-.bakens p:nth-child(1):before {
+.bakens p.jaargang:before {
     right: 100%;
 }
-.bakens p:nth-child(1):after {
+.bakens p.jaargang:after {
     left: 100%;
 }
