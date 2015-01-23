@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html> 
+	
+	<head> 
+		<script type="text/javascript" src="http://cdn.sanwebe.com/wp-content/themes/sanwebe/js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="http://cdn.sanwebe.com/wp-content/themes/sanwebe/js/bodyscript.min_v1.5.js"></script>
+
+		<style> 
+			#no {
+				display: none;	
+			}
+		
+			.box span {
+				display: block;
+				font-family:sans-serif;
+				font-size:130px;
+				margin:60px;
+			}
+		
+		</style> 
+	</head> 
+
+	<body>
+		<div id="yes"> 
+				<div class="box" id="gyro">
+					<span id="alphalabel"></span>			
+					<span id="betalabel"></span>
+					<span id="gammalabel"></span>
+				</div>
+		</div>
+		
+		<div id="no">
+			Your browser does not support Device Orientation and Motion API. Try this sample with iPhone, iPod or iPad with iOS 4.2+.    
+		</div>
+		
+		<script> 
+			var alpha = 0;
+			var beta = 0;
+			var gamma = 0;
+
+			window.ondeviceorientation = function(event) {
+				alpha = Math.round(event.alpha);
+				beta = Math.round(event.beta);
+				gamma = Math.round(event.gamma);
+			}				
+				
+			setInterval(function() {
+				document.getElementById("alphalabel").innerHTML = "Alpha: " + alpha;
+				document.getElementById("betalabel").innerHTML = "Beta: " + beta;
+				document.getElementById("gammalabel").innerHTML = "Gamma: " + gamma;
+			}, 5);
+		</script> 
+	
+	</body> 
+</html> 
